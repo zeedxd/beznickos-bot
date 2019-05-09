@@ -7,8 +7,7 @@ const fs = require("fs");
 blaki.commands = new Discord.Collection();
 
 const config = {
-    token: process.env.TOKEN,
-    owner: process.env.OWNER
+    token: process.env.TOKEN
 };
 
 blaki.on('ready', async () => {
