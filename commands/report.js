@@ -6,7 +6,7 @@ module.exports.run = async (blaki, message, args) => {
     let rreason = args.join(" ").slice(22);
 
     let reportEmbed = new Discord.RichEmbed()
-    .setDescription("Reports")
+    .setTitle("Nowe Zgłoszenie")
     .setColor("#ff0000")
     .addField("Reported User", `${rUser} with ID: ${rUser.id}`)
     .addField("Reported By", `${message.author} with ID: ${message.author.id}`)
