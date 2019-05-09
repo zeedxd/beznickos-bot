@@ -7,7 +7,7 @@ module.exports.run = async (blaki, message, args) => {
 
     let reportEmbed = new Discord.RichEmbed()
     .setDescription("Reports")
-    .setColor("#15f153")
+    .setColor("#ff0000")
     .addField("Reported User", `${rUser} with ID: ${rUser.id}`)
     .addField("Reported By", `${message.author} with ID: ${message.author.id}`)
     .addField("Channel", message.channel)
