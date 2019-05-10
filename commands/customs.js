@@ -8,9 +8,9 @@ module.exports.run = async (blaki, message, args) => {
     let mode = args.join(" ").slice(7);
 
     if(!message.member.roles.has(Szefuncio.id)) return message.reply("oops");
-    if(!args[0]) return message.channel.send("❌ Wprowadź prawidłowe wartości, b!ct hasło tryb ❌").then(() =>
+    if(!args[0]) return message.channel.send("❌ Wprowadź prawidłowe wartości, **b!ct hasło tryb** ❌").then(() =>
     {
-        message.channel.send("❌ Hasło musi posiadać dokładnie 7 znaków! ❌");
+        message.channel.send("❌ _Hasło musi posiadać dokładnie 7 znaków!_ ❌");
     })
     message.delete();
     let customEmbed = new Discord.RichEmbed()
