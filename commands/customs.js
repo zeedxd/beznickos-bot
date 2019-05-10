@@ -9,7 +9,7 @@ module.exports.run = async (blaki, message, args) => {
     if(!message.member.roles.has(Szefuncio.id)) return message.reply("oops");
     if(!args[0]) return message.channel.send("❌ Wprowadź prawidłowe wartości, b!customs tryb hasło ❌");
     else {
-        msg.delete();
+        message.delete();
         let customEmbed = new Discord.RichEmbed()
         .setColor("#FF0000")
         .setTitle("__**POWIADOMIENIE O NOWEJ GRZE**__")
