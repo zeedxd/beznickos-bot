@@ -7,8 +7,10 @@ module.exports.run = async (blaki, message, args) => {
     let mode = args[0];
 
     if(!message.member.roles.has(Szefuncio.id)) return message.reply("oops");
+    if(!args[0]) return message.reply("Podaj Tryb Gry");
+    if(!args[1]) return message.reply("Podaj Hasło do Gry");
     else {
-
+        msg.delete();
         let customEmbed = new Discord.RichEmbed()
         .setColor("#FF0000")
         .setTitle("__**POWIADOMIENIE O NOWEJ GRZE**__")
