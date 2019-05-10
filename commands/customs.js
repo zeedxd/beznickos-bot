@@ -7,7 +7,7 @@ module.exports.run = async (blaki, message, args) => {
     let mode = args[0];
 
     if(!message.member.roles.has(Szefuncio.id)) return message.reply("oops");
-    if(!args[0]) return message.channel.send("❌ Wprowadź prawidłowe wartości, b!customs tryb hasło ❌");
+    if(!args[0]) return message.channel.send("❌ Wprowadź prawidłowe wartości, b!custom tryb hasło ❌");
     else {
         message.delete();
         let customEmbed = new Discord.RichEmbed()
@@ -25,5 +25,6 @@ module.exports.run = async (blaki, message, args) => {
 }
 
 module.exports.help = {
-    name: "custom"
+    name: "custom",
+    name: "c"
 }
