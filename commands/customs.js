@@ -18,7 +18,6 @@ module.exports.run = async (blaki, message, args) => {
     .setTitle("__**POWIADOMIENIE O NOWEJ GRZE**__")
     .addField("HASŁO", `**${pass}**`)
     .addField("TRYB GRY", `**${mode}**`)
-    .addField("ZASADY LATE GAME", "**» Więcej niż 50 osób, bijemy się od 3 strefy**", "**» Mniej niż 50 osób, bijemy się od 4 strefy**", "**» Nie bijemy pojazdów innych osób przed 3 lub 4 strefą**")
     .setTimestamp(message.createdAt)
     .setFooter("Kliknij reakcje jeśli grasz", "https://i.imgur.com/g10ycEV.png");
     
