@@ -12,6 +12,7 @@ module.exports.run = async (blaki, message, args) => {
     {
         message.channel.send("❌ Hasło musi posiadać dokładnie 7 znaków! ❌");
     })
+    message.delete();
     let customEmbed = new Discord.RichEmbed()
     .setColor("#FF0000")
     .setTitle("__**POWIADOMIENIE O NOWEJ GRZE**__")
