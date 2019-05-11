@@ -20,7 +20,7 @@ module.exports.run = async (blaki, message, args) => {
     .addField("TRYB GRY", `**${mode}**`)
     .setTimestamp(message.createdAt)
     .setFooter("Kliknij reakcje jeśli grasz", "https://i.imgur.com/g10ycEV.png");
-    message.channel.send("<@&575434882021326888>");
+    message.channel.send("@here");
     message.channel.send(customEmbed).then(function (message) {
         message.react("✅")
     })
